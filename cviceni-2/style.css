@@ -16,3 +16,12 @@ h1, h2 {
   line-height: 1.2;
 }
 
+h2::after{
+    content:"";
+    display: block;
+    height: 5px;
+    width: 80px;
+    background-color: greenyellow;
+    margin-top: 10px;
+    margin-left: -20px;
+}

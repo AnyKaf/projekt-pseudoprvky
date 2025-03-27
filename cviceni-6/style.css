@@ -14,3 +14,37 @@ Nákupní seznam:
 - před každou položkou bude prázdný čtvereček
 - položky, které mají class="done", budou mít ve čtverečku textové emoji ✔️
 */
+
+.todo{
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+.todo li{
+    padding-block: 10px;
+    border-bottom: 1px gray solid;
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.todo li::before{
+    content:"";
+    height: 30px;
+    width: 30px;
+    border: 1px gainsboro solid;
+    border-radius: 15%;
+}
+
+li.done::before{
+    content: "✅";
+    display: flex;
+    filter:hue-rotate(180deg);
+    align-items: center;
+    justify-content: center;
+}
+
+.done{
+    color: gainsboro;
+}

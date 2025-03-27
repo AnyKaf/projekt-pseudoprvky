@@ -15,3 +15,13 @@ Nastyluj odkazy, které se otevírají do nového okna tak, aby za odkazem byla 
 Odkazy do nového okna poznáš tak, že mají u sebe atribut target="_blank".
 */
 
+a[target="_blank"]::after{
+    content: "";
+    display: inline-block;
+    background-image: url(images/icon.svg);
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 3px;
+    vertical-align: top;
+    background-size: 100%;
+}
